@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  scrapy-web:
+    image: bretfisher/jekyll-serve
+    volumes:
+      - .:/site
+    ports:
+      - "4000:4000"
+    tty: true
+    command: ["sleep", "infinity"]
